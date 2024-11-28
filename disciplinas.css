@@ -2,17 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 
-
 * {
     margin: 0px;
     padding: 0px;
 }
 
-
 .prof-box {
     display: flex;
     align-items: flex-start;
-    /* Mude para flex-start para alinhar no topo */
     justify-content: center;
     background-size: cover;
 }
@@ -60,9 +57,8 @@ h1 {
     text-align: center;
     font-family: 'Space Grotesk', sans-serif;
     word-wrap: break-word;
-    overflow: hidden; /* Oculta o conteúdo que excede a área da div */
+    overflow: hidden;
 }
-
 
 .texto img {
     width: 50%;
@@ -72,7 +68,6 @@ h1 {
     border-radius: 10%;
     margin-top: 15px;
 }
-
 
 .texto {
     background-color:rgb(130, 165, 170);
@@ -84,17 +79,13 @@ h1 {
    
 }
 
-
 footer {
     background-color: rgb(157, 238, 211);
-    /* width: var(--larguraC);
-    height: calc(var(--alturaC)); */
     text-align: center;
     padding: 10px;
     display: block;
 }
  
-
  #icon {
     width: 7%; 
     height: 5%; 
@@ -106,7 +97,6 @@ footer {
 #diciplina{
     margin: 10px;
     color: rgb(2, 5, 37);
-    
 }
 
 hr {
@@ -122,30 +112,21 @@ hr {
     height: 75vh;
     border: 0;
     width: 5px;
-    /* Alterado de height para width para representar a largura da linha */
     background-image: linear-gradient(to bottom,  rgb(130, 139, 170),rgb(130, 165, 170));
-    /* Gradiente colorido na direção vertical */
     margin: 20px;
     border-radius: 5px;
-    /* Valor de border-radius para criar uma ondulação */
 }
 
-/* Adicionando um elemento de estilo ao centro da linha */
 hr::after {
     display: inline-block;
     font-size: 1.5em;
     margin: 0 10px;
-    /* Espaçamento ao redor do emoji */
 }
-
-/* .foto img:hover{
-    transform: scale(1.1);
-} */
 
 p {
     margin-left: 10px;
-    
 }
+
 .foto p{
     font-family: 'Lobster Two', sans-serif;
 }
@@ -162,5 +143,4 @@ p {
     nav .menu-desktop {
         display: flex;
     }
-
 }

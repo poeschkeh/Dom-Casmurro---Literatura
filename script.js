@@ -1,25 +1,19 @@
 var menuIcon = document.getElementById('barra');
 var menuMobile = document.querySelector('.menu-mobile');
 
-
 function fechaMenuMobile(){
     menuIcon.src = 'menu.svg'; 
     menuMobile.style.left = "-100%"
 }
 
-
 function handleMenu(){
-    // Se o menu estiver aberto
     if (menuMobile.style.left == "0%" ){
         fechaMenuMobile()
-    // Se o menu estiver fechado
     } else {
         menuIcon.src = 'close.svg'; 
         menuMobile.style.left = "0%"
     }
-
 }
-
 
 function carregaConteudoLivro() {
     fetch("livroAutor.html")
@@ -111,9 +105,3 @@ function carregaConteudoDisciplinas() {
 
 document.getElementById("Disciplinas").addEventListener("click", carregaConteudoDisciplinas);
 document.getElementById("Disciplinas_Mini").addEventListener("click", carregaConteudoDisciplinas);
-
-
-
-
-
-

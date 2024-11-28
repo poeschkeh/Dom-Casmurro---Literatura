@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
 }
+
 :root{
     --corTexto:rgb(218, 218, 181);
 }
@@ -13,7 +14,6 @@ body{
 .box {
     display: flex;
     align-items: flex-start;
-    /* Mude para flex-start para alinhar no topo */
     justify-content: center;
     background-size: cover;
 }
@@ -21,7 +21,6 @@ body{
 .conte {
     display: flex;
     align-items: flex-start;
-    /* Mude para flex-start para alinhar no topo */
     justify-content: center;
     background-size: cover;
 }
@@ -31,16 +30,13 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Adicionado para centralizar os elementos internos */
     width: 25vw;
-    /* height: 90vh; */
     overflow: hidden;
     word-break: break-word;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
-
 
 .foto {
     width: 75%;
@@ -49,7 +45,6 @@ body{
     aspect-ratio: 8 / 12;
     border-radius: 10px;
     overflow: hidden;
-    /*pra não cortar a borda arredondada*/
     padding-top: 10px;
     
 }
@@ -61,21 +56,17 @@ body{
     
 }
 
-
 .texto {
     background-color: var(--corTexto);
     width: 70vw;
-    /*height: 90vh;*/
     margin-left: 50px;
     border-radius: 10px;
-    /*aspect-ratio: 6 / 12;*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .livro {
     background-color: var(--corTexto);
     width: 70vw;
-    /* height: 90vh; */
     margin-left: 50px;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -89,15 +80,11 @@ p {
     font-size: 18px;
 }
 
-
 footer p{
     text-align: center;
 }
 
 footer {
-    /* background-color: rgb(157, 238, 211); */
-    /* width: var(--larguraC);
-    height: calc(var(--alturaC)); */
     text-align: center;
     padding: 10px;
     display: block;
@@ -107,22 +94,14 @@ hr {
     border: 0;
     height: 5px;
     background-image: linear-gradient(to right, rgb(77, 56, 32), rgb(180, 149, 102));
-    /* Gradiente colorido */
     margin: 20px 0;
 }
 
-/* Adicionando um elemento de estilo ao centro da linha */
 hr::after {
     display: inline-block;
     font-size: 1.5em;
     margin: 0 10px;
-    /* Espaçamento ao redor do emoji */
 }
-/* .foto img:hover{
-    transform: scale(1.1);
-} */
-
-
 
 @media screen and (min-width:768px) {
     nav .menu-mobile {
@@ -136,5 +115,4 @@ hr::after {
     nav .menu-desktop {
         display: flex;
     }
-
 }
